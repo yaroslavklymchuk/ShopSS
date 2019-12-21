@@ -18,8 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('artshop/', include('myshoppie.apps.artshop.urls')),
-    path('shop/', include('myshoppie.apps.shop.urls')),
-    path('artists/', include('myshoppie.apps.artists.urls')),
-    path('about/', include('myshoppie.apps.about.urls')),
     path('admin/', admin.site.urls),
 ]

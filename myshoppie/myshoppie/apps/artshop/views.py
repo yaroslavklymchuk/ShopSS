@@ -1,5 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-	return HttpResponse("Here is new shop!")
+# Create your views here.
 
+def ResponseForArtshop(request):
+   return render(request, "Home _ BONA FIDES.html")
+
+def ResponseForBucket(request):
+   return render(request, "Корзина | BONA FIDES.html")

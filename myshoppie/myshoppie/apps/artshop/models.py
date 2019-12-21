@@ -13,7 +13,7 @@ class Artist(models.Model):
 		return self.artits_name
 
 class PictureModel(models.Model):
-	work_pic = models.FileField(upload_to = 'pic_folder/', blank = True)
+	work_pic = models.FileField(upload_to='pic_folder/', blank=True)
 
 class User(models.Model):
 	user = models.AutoField(primary_key=True)
@@ -27,7 +27,7 @@ class Good(models.Model):
 	good_description = models.TextField()
 	good_price = models.DecimalField(default=0.00, max_digits=10, decimal_places=2)
 	#release_date = models.DateTimeField()
-	good_pic = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
+	good_pic = models.ImageField(upload_to='pic_folder/', default='pic_folder/None/no-img.jpg')
 
 	def __str__(self):
 		return self.	good_title

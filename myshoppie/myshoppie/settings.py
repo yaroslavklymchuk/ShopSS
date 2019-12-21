@@ -32,9 +32,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'myshoppie.apps.about',
-    'myshoppie.apps.shop',
-    'myshoppie.apps.artists',
     'myshoppie.apps.artshop', #'artshop.apps.ArtshopConfig'
     'django.contrib.admin',
     'django.contrib.auth',
